@@ -1,0 +1,57 @@
+{
+  "mobile": [
+    {
+      "id": "m0",
+      "name": "iPhone 11",
+      "price": 500,
+      "src": "./assets/images/mobile/iphone11.webp",
+      "characteristics": {
+        "memory": 128,
+        "backCamera": "Main: 12MP, f/1.8, 26mm, OIS, QuadLED flash Secondary wide-angle: 12MP, f/2.4, 13mm, 120º. Video: 4K/60fps, 1080p/240fps, HDR",
+        "frontCamera": "12MP, f/2.2, TOF 3D, slow-motion",
+        "ram": 4,
+        "software": "IOS 13"
+      }
+    },
+    {
+      "id": "m1",
+      "name": "iPhone 14 Pro",
+      "price": 999,
+      "src": "./assets/images/mobile/iphone14pro.webp",
+      "characteristics": {
+        "memory": 512,
+        "backCamera": "Main: 48MP, f/1.78, 24mm, OIS Ultra wide-angle: 12MP, f/2.2, 13mm Telephoto: 12MP, f/2.8, 77mm, OIS",
+        "frontCamera": "12MP, f1.9, auto focus",
+        "ram": 6,
+        "software": "IOS 16"
+      }
+    },
+    {
+      "id": "m2",
+      "name": "Samsung A13",
+      "price": 230,
+      "src": "./assets/images/mobile/samsungA13.webp",
+      "characteristics": {
+        "memory": 128,
+        "backCamera": "Main: 50 megapixels f/1.8 Wide: 5 megapixels f/2.2 Depth: 2 megapixels f/2.4 Macro: 2 megapixels f/2.4",
+        "frontCamera": "8 megapixels f/2.2",
+        "ram": 4,
+        "software": "Android 12"
+      }
+    },
+    {
+      "id": "m3",
+      "name": "Samsung A53",
+      "price": 360,
+      "src": "./assets/images/mobile/samsungA53.webp",
+      "characteristics": {
+        "memory": 256,
+        "backCamera": "Main: 64-megapixel sensor, f/1.8 aperture value optics and optical stabilization Ultra wide-angle: 12-megapixel sensor and f/2.2 aperture value optics. Depth camera: 5-megapixel sensor and f/2.4 aperture value optics Macro camera: 5-megapixel sensor and f/2.4 aperture value optics",
+        "frontCamera": "32-megapixel sensor and f/2.2 aperture value optics",
+        "ram": 6,
+        "software": "Android 12"
+      }
+    }
+  ],
+  "console": []
+}
