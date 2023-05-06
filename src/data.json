@@ -77,5 +77,56 @@
         "GPU": "GPU de 4 TERAFLOPS, 20 CU a 1,565 GHz con RDNA 2 personalizada"
       }
     }
+  ],
+  "tablet": [
+    {
+      "id": "t0",
+      "name": "Huion H640p",
+      "price": 500,
+      "src": "./assets/images/tablet/huionH640p.webp",
+      "characteristics": {
+        "Pressure sensitivity": "8192 Levels",
+        "Connectivity technology": "USB"
+      }
+    }
+  ],
+  "laptop": [
+    {
+      "id": "l0",
+      "name": "HP Elitebook 840 G3",
+      "price": 600,
+      "src": "./assets/images/laptop/laptopHpElitebook840.webp",
+      "characteristics": {
+        "processor": "Intel Core i5 6200U",
+        "Graphics card": "Intel HD Graphics 520",
+        "Operating system": "Windows 10 pro 64bits",
+        "memory": 512,
+        "ram": 16
+      }
+    },
+    {
+      "id": "l1",
+      "name": "Chormebook Lenovo N23",
+      "price": 150,
+      "src": "./assets/images/laptop/lenovoN23.webp",
+      "characteristics": {
+        "processor": "Intel Celeron N3060",
+        "memory": 16,
+        "Operating system": "Windows 10",
+        "ram": 4
+      }
+    },
+    {
+      "id": "l2",
+      "name": "Mac Book Pro M2",
+      "price": 900,
+      "src": "./assets/images/laptop/macbookProM2.webp",
+      "characteristics": {
+        "processor": "M2 8-Core Chip",
+        "Graphics card": "M2 10 Cores",
+        "memory": 512,
+        "ram": 8
+      }
+    }
   ]
 }
