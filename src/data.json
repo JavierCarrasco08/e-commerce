@@ -53,5 +53,29 @@
       }
     }
   ],
-  "console": []
+  "console": [
+    {
+      "id": "c0",
+      "name": "Nintendo Switch Oled Neon",
+      "price": 360,
+      "src": "./assets/images/consola/nintendoSwitchOledNeon.webp",
+      "characteristics": {
+        "memory": 64,
+        "screen": "7 inch (17.78 cm) OLED screen",
+        "audio": "Improved audio"
+      }
+    },
+    {
+      "id": "c1",
+      "name": "Xbox Series S",
+      "price": 600,
+      "src": "./assets/images/consola/xboxSeriesS.webp",
+      "characteristics": {
+        "memory": "10 GB GDDR6 128-bit wide 10 GB GDDR6 bus",
+        "bandwidth": "8 GB a 224 GB/s, 2 GB a 56 GB/s",
+        "CPU": "3.6 GHz (3.4 GHz with SMT) custom 8-core Zen 2 CPU",
+        "GPU": "GPU de 4 TERAFLOPS, 20 CU a 1,565 GHz con RDNA 2 personalizada"
+      }
+    }
+  ]
 }
