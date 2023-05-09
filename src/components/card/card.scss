@@ -1,0 +1,53 @@
+.card {
+  flex-basis: 170px;
+  max-height: 290px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 0.5rem;
+  box-shadow: 0 0 0.8rem 0.3rem rgba($color: #333, $alpha: 0.1);
+  cursor: pointer;
+  &__figure {
+    width: 100%;
+    height: 10rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__name {
+    flex-grow: 2;
+    font-size: clamp(1.2rem, 1.3vw, 2rem);
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__price {
+    font-weight: 700;
+
+    span {
+      color: #06d6a0;
+    }
+  }
+  &__button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--primary-background-btn);
+    color: var(--primary-background-root);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    cursor: pointer;
+  }
+}
