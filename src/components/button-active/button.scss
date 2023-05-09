@@ -2,9 +2,8 @@
   background-color: transparent;
   border: none;
   display: inline-block;
-  width: clamp(2.5rem, 5vw, 4rem);
+  width: clamp(2.5rem, 5vw, 3rem);
   cursor: pointer;
-
   &__img {
     max-width: 100%;
     width: 100%;
