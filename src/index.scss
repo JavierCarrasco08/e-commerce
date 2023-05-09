@@ -16,9 +16,10 @@ html {
 :root {
   --primary-color-text: #0d1b2a;
   --primary-background-root: #edf2f4;
+  --secondary-background-button: #8d99ae;
   --primary-color-mark: #1b263b;
   --primary-background-btn: #415a77;
-  --primary-color-border: #2b2d42;
+  --primary-color-border: #3d405b;
   --hover-btn: #778da9;
 }
 body {
@@ -28,10 +29,38 @@ body {
 
 #root {
   max-width: 1500px;
+  width: 100%;
+  overflow-x: hidden;
   height: 100%;
   margin: {
     right: auto;
     left: auto;
   }
   color: var(--primary-color-text);
+  display: grid;
+  grid-template-areas:
+    "category car"
+    "outlet   outlet"
+    "outlet   outlet"
+    "outlet   outlet";
+}
+
+.category {
+  grid-area: category;
+}
+.car {
+  grid-area: car;
+  justify-self: end;
+}
+.outlet {
+  grid-area: outlet;
+}
+
+@media screen and (min-width: 62.5em) {
+  #root {
+    grid-template-areas:
+      "category outlet outlet car"
+      "category outlet outlet car"
+      "category outlet outlet car";
+  }
 }
