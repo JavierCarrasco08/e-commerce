@@ -9,7 +9,7 @@ export default function CategoryMenu() {
   const [expand, setExpand] = useState(false);
   const hidden = useHidden(1000);
   return (
-    <aside className="menu">
+    <aside className="menu category">
       {hidden ? null : (
         <Button src={category} onActive={() => setExpand(!expand)} />
       )}

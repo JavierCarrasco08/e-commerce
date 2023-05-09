@@ -1,5 +1,7 @@
 .menu {
   &__list {
+    background-color: var(--primary-background-root);
+    padding: 1rem;
     position: absolute;
     left: 1.5rem;
     width: 50%;
@@ -46,7 +48,13 @@
   .menu {
     &__list {
       position: static;
-      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-right: thin solid var(--primary-color-border);
       transform: translateY(0);
       -webkit-transform: translateY(0);
       -moz-transform: translateY(0);
