@@ -19,6 +19,8 @@ export default function BuyingMenu({ products }) {
                 src={product.src}
                 name={product.name}
                 prices={product.price}
+                num={product.num}
+                id={product.id}
               />
             ))
           ) : (

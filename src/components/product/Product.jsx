@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useContext } from "react";
 import "./product.scss";
+import { AddContext } from "../../context/addCar";
 
-export default function Product({ name, src, prices }) {
-  const [countProduct, setCountProduct] = useState(1);
+export default function Product({ name, src, prices, num, id }) {
+  const addContext = useContext(AddContext);
   return (
     <>
       <li className="product">
@@ -12,17 +13,17 @@ export default function Product({ name, src, prices }) {
         <div className="product__container">
           <h2 className="product__name">{name}</h2>
           <p className="product__prices">
-            {countProduct * prices} <span>$</span>
+            {num * prices} <span>$</span>
           </p>
           <div className="product__buttons">
             <button
-              onPointerDown={() => setCountProduct(1 + countProduct)}
+              onPointerDown={() => addContext(id, (num) => num + 1)}
               className="product__button">
               +
             </button>
-            <p className="product__count">{countProduct}</p>
+            <p className="product__count">{num}</p>
             <button
-              onPointerDown={() => setCountProduct(countProduct - 1)}
+              onPointerDown={() => addContext(id, (num) => num - 1)}
               className="product__button">
               -
             </button>
