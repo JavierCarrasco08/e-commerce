@@ -19,7 +19,7 @@ export default function Card({ name, prices, src, id }) {
           onPointerDown={() => {
             Add(id, (num) => num + 1);
           }}>
-          Buy
+          Add
         </button>
       </div>
     </div>
