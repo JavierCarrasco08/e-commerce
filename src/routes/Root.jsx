@@ -10,12 +10,41 @@ function Root() {
   return (
     <>
       <AddContext.Provider
-        value={(id) =>
-          setBuyList([
-            ...buyList,
-            getAll().find((product) => product.id === id),
-          ])
-        }>
+        value={(id, op) => {
+          let ignore = true;
+          let getProduct = getAll().find((product) => product.id === id);
+          let filterProduct = buyList.find((product) => product.id === id);
+          getProduct.num = 1;
+          if (!buyList.some((product) => product.id === id)) {
+            setBuyList([...buyList, getProduct]);
+            ignore = false;
+          }
+          if (filterProduct) {
+            let result = op(filterProduct.num);
+            result === 0
+              ? setBuyList(
+                  buyList.filter((product) => {
+                    ignore = false;
+                    return product.id !== id;
+                  })
+                )
+              : (ignore = true);
+          }
+          if (ignore) {
+            setBuyList(
+              buyList.map((product) => {
+                if (product.id === id) {
+                  return {
+                    ...product,
+                    num: op(product.num),
+                  };
+                } else {
+                  return product;
+                }
+              })
+            );
+          }
+        }}>
         <CategoryMenu />
         <Outlet />
         <BuyingMenu products={buyList} />
