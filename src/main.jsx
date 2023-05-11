@@ -4,7 +4,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ContainerCard from "./components/container-card/ContainerCard.jsx";
 import Root from "./routes/Root.jsx";
 import Category from "./routes/Category.jsx";
+import Item from "./routes/Item.jsx";
 import data from "./data.js";
+import { getAll } from "./helper/getAll.js";
 import "./index.scss";
 const router = createBrowserRouter([
   {
@@ -20,6 +22,13 @@ const router = createBrowserRouter([
         element: <Category />,
         loader: ({ params }) => {
           return data[params.categoryId];
+        },
+      },
+      {
+        path: "/item/:productId",
+        element: <Item />,
+        loader: ({ params }) => {
+          return getAll().find((product) => product.id === params.productId);
         },
       },
     ],
