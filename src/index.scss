@@ -59,8 +59,9 @@ body {
 @media screen and (min-width: 62.5em) {
   #root {
     grid-template-areas:
-      "category outlet outlet car"
-      "category outlet outlet car"
-      "category outlet outlet car";
+      "category  outlet outlet car"
+      "category  outlet outlet car"
+      "category  outlet outlet car";
+    column-gap: 0.5rem;
   }
 }
