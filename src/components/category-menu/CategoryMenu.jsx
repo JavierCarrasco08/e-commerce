@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useHidden } from "../../hooks/useHidden";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Button from "../button-active/Button";
 import category from "../../assets/svg/category.svg";
 import "./category.scss";
@@ -18,29 +18,49 @@ export default function CategoryMenu() {
         className={`menu__list ${expand ? "translate" : null}`}
         onClick={() => setExpand(false)}>
         <li className="menu__item">
-          <Link className="menu__a" to="/">
+          <NavLink
+            className={`menu__a ${({ isActive }) => {
+              return isActive ? "active" : "";
+            }}`}
+            to="/">
             Home
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link className="menu__a" to="/category/mobile">
+          <NavLink
+            className={`menu__a ${({ isPending, isActive }) => {
+              return isPending ? "pending" : isActive ? "active" : "";
+            }}`}
+            to="/category/mobile">
             Mobiles
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link className="menu__a" to="/category/laptop">
+          <NavLink
+            className={`menu__a ${({ isPending, isActive }) => {
+              return isPending ? "pending" : isActive ? "active" : "";
+            }} `}
+            to="/category/laptop">
             Laptops
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link className="menu__a" to="/category/tablet">
+          <NavLink
+            className={`menu__a ${({ isPending, isActive }) => {
+              return isPending ? "pending" : isActive ? "active" : "";
+            }}`}
+            to="/category/tablet">
             Tablets
-          </Link>
+          </NavLink>
         </li>
         <li className="menu__item">
-          <Link className="menu__a" to="/category/console">
+          <NavLink
+            className={`menu__a ${({ isPending, isActive }) => {
+              return isPending ? "pending" : isActive ? "active" : "";
+            }}`}
+            to="/category/console">
             Consoles
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </aside>
