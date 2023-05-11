@@ -5,3 +5,11 @@
   gap: 1rem;
   padding-block: 2rem;
 }
+
+@media screen and (min-width: 62.5em) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 170px);
+    grid-area: 0.5rem;
+  }
+}
