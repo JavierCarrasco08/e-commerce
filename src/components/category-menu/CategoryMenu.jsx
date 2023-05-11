@@ -14,18 +14,33 @@ export default function CategoryMenu() {
         <Button src={category} onActive={() => setExpand(!expand)} />
       )}
 
-      <ul className={`menu__list ${expand ? "translate" : null}`}>
+      <ul
+        className={`menu__list ${expand ? "translate" : null}`}
+        onClick={() => setExpand(false)}>
         <li className="menu__item">
-          <Link className="menu__a">Mobiles</Link>
+          <Link className="menu__a" to="/">
+            Home
+          </Link>
         </li>
         <li className="menu__item">
-          <Link className="menu__a">Laptops</Link>
+          <Link className="menu__a" to="/category/mobile">
+            Mobiles
+          </Link>
         </li>
         <li className="menu__item">
-          <Link className="menu__a">Tablets</Link>
+          <Link className="menu__a" to="/category/laptop">
+            Laptops
+          </Link>
         </li>
         <li className="menu__item">
-          <Link className="menu__a">Consoles</Link>
+          <Link className="menu__a" to="/category/tablet">
+            Tablets
+          </Link>
+        </li>
+        <li className="menu__item">
+          <Link className="menu__a" to="/category/console">
+            Consoles
+          </Link>
         </li>
       </ul>
     </aside>
